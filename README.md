@@ -1,6 +1,4 @@
-# Android-Travel-Memoir
-
-# Milestone 1 - APP_NAME_HERE (Unit 7)
+# Milestone 1 - Android Travel Memoir (Unit 7)
 
 ## Table of Contents
 
@@ -56,18 +54,18 @@ V4: Enable integration with other travel apps and services (e.g., airline ticket
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Globe View
+* Trip Maker
+* Trip Search
+* Friends
+* Settings
 
 **Flow Navigation** (Screen to Screen)
 
-- [list first screen here]
-  - [list screen navigation here]
-  - ...
-- [list second screen here]
-  - [list screen navigation here]
-  - ...
+- Globe View
+  - Trip maker - when user places a tack
+- Trip Search
+  - Globe View - user can look for specific trips and get shown them on the map
 
 ## Wireframes
 
