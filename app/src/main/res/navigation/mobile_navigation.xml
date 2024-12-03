@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/globe_view">
+
+    <fragment
+        android:id="@+id/document_trip"
+        android:name="caruso.example.travelmemoir.ui.tripCreate.TripCreateFragment"
+        android:label="@string/title_trip_create"
+        tools:layout="@layout/fragment_trip_create" />
+
+    <fragment
+        android:id="@+id/search_trip"
+        android:name="caruso.example.travelmemoir.ui.tripSearch.TripSearchFragment"
+        android:label="@string/title_trip_search"
+        tools:layout="@layout/fragment_trip_search" />
+
+    <fragment
+        android:id="@+id/globe_view"
+        android:name="caruso.example.travelmemoir.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/friends_view"
+        android:name="caruso.example.travelmemoir.ui.friends.FriendsFragment"
+        android:label="@string/title_friends"
+        tools:layout="@layout/fragment_friends" />
+
+    <fragment
+        android:id="@+id/settings_view"
+        android:name="caruso.example.travelmemoir.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

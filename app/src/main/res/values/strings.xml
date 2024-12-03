@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Travel Memoir</string>
+    <string name="title_home">Home</string>
+    <string name="title_trip_create">Record Trip</string>
+    <string name="title_trip_search">Search Trips</string>
+    <string name="title_friends">View Friends</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

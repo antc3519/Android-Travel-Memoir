@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/document_trip"
+        android:icon="@drawable/document_icon"
+        android:title="@string/title_trip_create" />
+
+    <item
+        android:id="@+id/search_trip"
+        android:icon="@drawable/search_icon"
+        android:title="@string/title_trip_search" />
+
+    <item
+        android:id="@+id/globe_view"
+        android:icon="@drawable/globe_icon"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/friends_view"
+        android:icon="@drawable/people_icon"
+        android:title="@string/title_friends" />
+
+    <item
+        android:id="@+id/settings_view"
+        android:icon="@drawable/settings_icon"
+        android:title="@string/title_settings" />
+
+</menu>
