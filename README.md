@@ -114,4 +114,6 @@ from the original requirements
 
 ## App Demo Video
 
-- Embed the YouTube/Vimeo link of your Completed Demo Day prep video
+https://github.com/user-attachments/assets/8a70d212-5025-4e32-a5cc-3c29cb7a9bcf
+
+- Final project demo presentation
