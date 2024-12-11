@@ -36,7 +36,7 @@ class TripSearchFragment(tripEntryId: String) : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        Log.e("YES", tripId)
         recyclerView = view.findViewById(R.id.tripListRecycler)
         searchView = view.findViewById(R.id.searchView)
         tripList = mutableListOf()
@@ -67,22 +67,22 @@ class TripSearchFragment(tripEntryId: String) : Fragment() {
                         title = document.get("title").toString(),
                         description = document.get("description").toString(),
                         date = document.get("date").toString(),
-                        mediaList = photoArray,
+                        mediaList = photoArray
                     )
-                    if(tripId == "")
-                        tripList.add(trip)
-                    else if(tripId == document.id){
-                        tripList.add(trip)
-                    }
-
+                    tripList.add(trip)
+                    Log.e("TRIPID", tripId)
+                    Log.e("DOCID", document.id)
+                    if(document.id == tripId)
+                        filteredList.add(trip)
                 }
-                filteredList.addAll(tripList)
+                if(tripId === "")
+                    filteredList.addAll(tripList)
+                Log.e("FILTERED LIST", filteredList.toString(), )
                 adapter.notifyDataSetChanged()
             }
             .addOnFailureListener { e ->
                 Toast.makeText(requireContext(), "Error: ${e.message}", Toast.LENGTH_SHORT).show()
             }
-        tripId = ""
     }
 
     private fun setupSearchView() {

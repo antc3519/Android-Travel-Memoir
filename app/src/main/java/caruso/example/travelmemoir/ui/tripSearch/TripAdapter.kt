@@ -1,5 +1,6 @@
 package caruso.example.travelmemoir.ui.tripSearch
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,16 +26,25 @@ class TripAdapter(private val tripList: List<tripEntry>) : RecyclerView.Adapter<
             titleTextView.text = trip.title
             dateTextView.text = trip.date
             descriptionTextView.text = trip.description
+            photoImageView1.visibility = View.GONE
+            photoImageView2.visibility = View.GONE
+
+
             if (trip.mediaList.size >= 2){
-                Glide.with(itemView)
-                    .load(trip.mediaList[1])
+                var pic2 = trip.mediaList[1].replace(Regex("[\\[\\]\\s]"), "")
+                Log.e("PICS", pic2)
+                photoImageView2.visibility = View.VISIBLE
+                Glide.with(itemView.context)
+                    .load(pic2)
                     .placeholder(R.drawable.ic_launcher_foreground)
                     .error(R.drawable.ic_launcher_background)
                     .into(photoImageView2)
             }
             if (trip.mediaList.size >= 1){
-                Glide.with(itemView)
-                    .load(trip.mediaList[0])
+                var pic1 = trip.mediaList[0].replace(Regex("[\\[\\]\\s]"), "")
+                photoImageView1.visibility = View.VISIBLE
+                Glide.with(itemView.context)
+                    .load(pic1)
                     .placeholder(R.drawable.ic_launcher_foreground)
                     .error(R.drawable.ic_launcher_background)
                     .into(photoImageView1)

@@ -58,8 +58,8 @@ android {
 }
 
 dependencies {
-    implementation("com.github.bumptech.glide:glide:4.12.0")
-    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+    implementation("com.github.bumptech.glide:glide:4.14.2") // Update to latest version
+    annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
     implementation("androidx.multidex:multidex:2.0.1")
     implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
     implementation("com.google.firebase:firebase-analytics")
