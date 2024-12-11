@@ -99,15 +99,18 @@ this section]
 ## GitHub Project board
 
 [Add screenshot of your Project Board with the updated status of issues for Milestone 3. Note that these should include the updated issues you worked on for this sprint and not be a duplicate of Milestone 2 Project board.] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-
+<img src="https://github.com/antc3519/Android-Travel-Memoir/blob/main/projectBoardMilestone3.JPG" width=800>
 ## Completed user stories
 
 - List the completed user stories from this unit
+1. Interactive map with placeable pins
+2. System to create unique content relevant to a trip
+3. Sharing interface to share trips with others and see friends
 - List any pending user stories / any user stories you decided to cut
 from the original requirements
 
 [Add video/gif of your current application that shows build progress]
-<img src="" width=600>
+<img src="https://github.com/antc3519/Android-Travel-Memoir/blob/main/travelMemoirMilestone3.gif" width=600>
 
 ## App Demo Video
 
